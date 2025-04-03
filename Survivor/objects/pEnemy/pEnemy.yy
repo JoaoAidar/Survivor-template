@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"pWeapon",
+  "%Name":"pEnemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"pWeapon",
+  "name":"pEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weapons",
-    "path":"folders/Objects/Entities/Weapons.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Entities/Enemies.yy",
   },
   "parentObjectId":{
     "name":"pEntity",

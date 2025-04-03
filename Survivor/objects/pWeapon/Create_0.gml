@@ -1,2 +1,4 @@
+event_inherited()
 myOwner = noone;
-myRotationAngle = 0
+myRange = 100;
+myExternalRotationAngle = 0

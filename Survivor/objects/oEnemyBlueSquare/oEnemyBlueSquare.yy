@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oBow",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oEnemyBlueSquare",
+  "eventList":[],
   "managed":true,
-  "name":"oBow",
+  "name":"oEnemyBlueSquare",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weapons",
-    "path":"folders/Objects/Entities/Weapons.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Entities/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"pWeapon",
-    "path":"objects/pWeapon/pWeapon.yy",
+    "name":"pEnemy",
+    "path":"objects/pEnemy/pEnemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBow",
-    "path":"sprites/sprBow/sprBow.yy",
+    "name":"sprEnemyBlueSquare",
+    "path":"sprites/sprEnemyBlueSquare/sprEnemyBlueSquare.yy",
   },
   "spriteMaskId":null,
   "visible":true,

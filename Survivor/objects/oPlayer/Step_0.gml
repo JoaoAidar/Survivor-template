@@ -6,7 +6,7 @@ var newVelocity;
 if(hInput != 0 or vInput !=0) {
 	var newAngle = Vec2_InputToAngle(hInput, vInput)
 	newVelocity = Vec2_PolarToCartesian([myVelocity, newAngle])
-	show_debug_message("New velocity:" + string(newVelocity)) 
+	//show_debug_message("New velocity:" + string(newVelocity)) 
 } else { 
 	newVelocity = [0,0]	
 }

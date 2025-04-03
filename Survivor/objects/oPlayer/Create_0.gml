@@ -1,5 +1,5 @@
 myVelocity = 10;
-
+myName = "Player"
 myVectors[EntityVectors.Position] = [x,y]
 myVectors[EntityVectors.Velocity] = [0,0]
 myId = id
