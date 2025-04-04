@@ -5,7 +5,7 @@ if (!instance_exists(myOwner)) exit;
 var ownerPos = [myOwner.x, myOwner.y];
 
 // Get the velocity vector of the owner
-var ownerVelocity = myOwner.myVectors[EntityVectors.Velocity];
+var ownerVelocity = myOwner.myVectors[EntityVectors.NetVelocity];
 
 // Increment the rotation angle
 myExternalRotationAngle += 1;
@@ -19,7 +19,7 @@ var newPos = Entity_orbitAroundPosition(ownerPredictedPos, 50, myExternalRotatio
 
 // Update this entity's position and velocity vectors
 myVectors[EntityVectors.Position] = newPos;
-myVectors[EntityVectors.Velocity] = Vec2_PolarToCartesian([myVelocity, myExternalRotationAngle])
+myVectors[EntityVectors.NetVelocity] = Vec2_PolarToCartesian([myVelocity, myExternalRotationAngle])
 
 // Update the actual x,y coordinates
 x = newPos[0];

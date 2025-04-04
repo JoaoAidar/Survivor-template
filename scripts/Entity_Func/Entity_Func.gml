@@ -15,12 +15,12 @@ function Entity_MoveTowardsPoint(_id, _goalPosVector) {
     var curPos = ID.myVectors[EntityVectors.Position];
     var posGoal = _goalPosVector;
     
-    show_debug_message("Current position: " + string(curPos));
-    show_debug_message("Goal position: " + string(posGoal));
+    //show_debug_message("Current position: " + string(curPos));
+   // show_debug_message("Goal position: " + string(posGoal));
     
     // Compute the direction vector from current to goal
     var directionVec = Vec2_SubtractCartesian(posGoal, curPos);
-    show_debug_message("Direction vector: " + string(directionVec));
+    //show_debug_message("Direction vector: " + string(directionVec));
     
     // Get the magnitude of the direction vector
     var magnitude = Vec2_LengthCartesian(directionVec);
@@ -36,7 +36,7 @@ function Entity_MoveTowardsPoint(_id, _goalPosVector) {
     // Multiply the normalized vector by the desired speed (ID.myVelocity)
     var desiredSpeed = ID.myVelocity;
     var newVelocity = Vec2_ScaleVector(normalizedDir, desiredSpeed);
-    show_debug_message("New velocity: " + string(newVelocity));
+    //show_debug_message("New velocity: " + string(newVelocity));
     
     return newVelocity;
 }

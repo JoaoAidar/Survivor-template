@@ -42,6 +42,7 @@
     {"id":{"name":"Assets used","path":"notes/Assets used/Assets used.yy",},},
     {"id":{"name":"oBow","path":"objects/oBow/oBow.yy",},},
     {"id":{"name":"oEnemyBlueSquare","path":"objects/oEnemyBlueSquare/oEnemyBlueSquare.yy",},},
+    {"id":{"name":"oEnvironment","path":"objects/oEnvironment/oEnvironment.yy",},},
     {"id":{"name":"oGod","path":"objects/oGod/oGod.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"pEnemy","path":"objects/pEnemy/pEnemy.yy",},},

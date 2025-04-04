@@ -13,6 +13,18 @@ function Vec2_AddPolar(_vec01, _vec02){
 	return [rr, thetar]
 }
 
+function Vec2_GetNetForce(_vecArray) {
+	var netForce = [0,0]
+	if(array_length(_vecArray) == 0) return netForce
+	var arLen = array_length(_vecArray) 
+	
+	for(var i = 0; i < arLen; i++) {
+		netForce = Vec2_AddCartesian(netForce, _vecArray[i])
+	}
+	
+	return netForce
+}
+
 function Vec2_InputToAngle(_hInput, _vInput)
 { 
 	return darctan2(_vInput, _hInput)		
