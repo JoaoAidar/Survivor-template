@@ -24,3 +24,9 @@ myVectors[EntityVectors.NetVelocity] = Vec2_PolarToCartesian([myVelocity, myExte
 // Update the actual x,y coordinates
 x = newPos[0];
 y = newPos[1];
+
+//v²/2 = Gm/d²
+//d = sqrt(Gm/2v²)
+
+//raio implicito = d 
+

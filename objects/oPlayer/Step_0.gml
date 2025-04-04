@@ -15,7 +15,7 @@ myVectors[EntityVectors.Forces] = forces;
 
 
 myVectors[EntityVectors.NetForce] = Vec2_GetNetForce(myVectors[EntityVectors.Forces])
-myVectors[EntityVectors.NetVelocity] = myVectors[EntityVectors.NetForce]
+myVectors[EntityVectors.NetVelocity] = Vec2_ScaleVector(myVectors[EntityVectors.NetForce], (1/myMass)) 
 var newPosVec = Vec2_AddCartesian(myVectors[EntityVectors.Position], myVectors[EntityVectors.NetVelocity])
 myVectors[EntityVectors.Position] = newPosVec
 x = myVectors[EntityVectors.Position][0]
