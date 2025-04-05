@@ -3,7 +3,7 @@ function Vec2_AddPolar(_vec01, _vec02){
 	var vec2 = _vec02
 	var r1 = vec1[0]
 	var r2 = vec2[0] 
-	var theta1 = vec2[1] 
+	var theta1 = vec1[1] 
 	var theta2 = vec2[1]
 	var rr, thetar;
 	
@@ -53,7 +53,7 @@ function Vec2_ScaleVector(_vec01, _scaleFactor) {
 }
 
 function Vec2_ScalarProduct(_vec01, _vec02){
-	
+	return _vec01[0]*_vec02[0] + _vec01[1]*_vec02[1];
 }
 function Vec2_LengthCartesian(_vector){
 	return sqrt(sqr(_vector[0]) + sqr(_vector[1]))
@@ -89,4 +89,17 @@ function Vec2_DrawVector(_origin, _vector, _scalingFactor)
 	var vector = Vec2_AddCartesian(_origin,_vector)
 	draw_arrow(_origin[0], _origin[1], vector[0], vector[1],6)
 	
+}
+
+function Vec2_DrawForceVectors(_vecArray) {
+	if(array_length(_vecArray) == 0) exit;
+	show_debug_message(_vecArray)
+	var arLen = array_length(_vecArray) 
+	
+	for(var i = 0; i < arLen; i++) {
+		draw_set_color(c_green)
+		Vec2_DrawVector(myVectors[EntityVectors.Position], _vecArray[i], myVectorVisualScalingFactor)
+		draw_set_color(c_white)
+		show_debug_message("Drawing vector:" + string(i))
+	}
 }

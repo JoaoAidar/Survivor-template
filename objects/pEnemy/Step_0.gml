@@ -6,7 +6,8 @@ var internalForce = Entity_MoveTowardsPoint(id,oPlayer.myVectors[EntityVectors.P
 
 array_push(myVectors[EntityVectors.Forces], internalForce) 
 array_push(myVectors[EntityVectors.Forces], [-1,0])
-myVectors[EntityVectors.NetVelocity] = Vec2_GetNetForce(myVectors[EntityVectors.Forces])
+myVectors[EntityVectors.NetForce] = Vec2_GetNetForce(myVectors[EntityVectors.Forces])
+myVectors[EntityVectors.NetVelocity] = Vec2_ScaleVector(myVectors[EntityVectors.NetForce], 1/myMass)
 var newPos = Vec2_AddCartesian(myVectors[EntityVectors.Position], myVectors[EntityVectors.NetVelocity])
 
 x = newPos[0]

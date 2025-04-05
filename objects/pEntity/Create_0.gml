@@ -10,5 +10,7 @@ myName = "";
 myVelocity = 10;
 myVectors[EntityVectors.Position] = [x,y]
 myVectors[EntityVectors.NetVelocity] = [0,0]
-myVectors[EntityVectors.NetForce] = [];
+myVectors[EntityVectors.NetForce] = [0,0];
 myVectors[EntityVectors.Forces] = [];
+
+myVectorVisualScalingFactor = 10;

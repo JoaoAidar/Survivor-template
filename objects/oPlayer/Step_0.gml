@@ -10,7 +10,6 @@ if(hInput != 0 or vInput !=0) {
 } 
 var windForce = [-1, 0] 
 array_push(forces, windForce)
-show_debug_message("Forces: " + string(forces))
 myVectors[EntityVectors.Forces] = forces;
 
 
